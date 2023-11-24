@@ -8,6 +8,7 @@ const Navbar = () => {
         to="/"
       >
         <p className="blue-gradient_text">AH</p>
+        <p className="blue-gradient_text">AH</p>
       </NavLink>
     </header>
   );

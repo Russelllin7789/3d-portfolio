@@ -4,7 +4,7 @@ import Loader from "../components/Loader";
 import Island from "../models/Island";
 import Sky from "../models/Sky";
 import Plane from "../models/Plane";
-import Bird from "../models/Bird";
+import Balloons from "../models/Balloons";
 import HomeInfo from "../components/HomeInfo";
 
 const Home = () => {
@@ -56,7 +56,7 @@ const Home = () => {
         camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader />}>
-          <directionalLight position={[1, 1, 1]} intensity={2} />
+          <directionalLight position={[1, 1, 1]} intensity={3.5} />
           <ambientLight intensity={0.5} />
           <hemisphereLight
             skyColor="#b1e1ff"
@@ -64,7 +64,7 @@ const Home = () => {
             intensity={1}
           />
 
-          <Bird />
+          <Balloons />
           <Sky isRotating={isRotating} />
           <Island
             position={islandPosition}

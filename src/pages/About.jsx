@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { skills, experiences } from "../constants";
+import CTA from "../components/CTA";
 
 const About = () => {
   return (
@@ -49,7 +50,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-12 flex">
+        <div className="mt-6 flex">
           <VerticalTimeline>
             {experiences.map((experience) => (
               <VerticalTimelineElement
@@ -99,6 +100,9 @@ const About = () => {
           </VerticalTimeline>
         </div>
       </div>
+
+      <hr className="border-slate-200" />
+      <CTA />
     </section>
   );
 };

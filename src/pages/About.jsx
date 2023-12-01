@@ -54,7 +54,9 @@ const About = () => {
             {experiences.map((experience) => (
               <VerticalTimelineElement>
                 <div>
-                  <h3>{experience.title}</h3>
+                  <h3 className="text-black text-xl font-poppins font-semibold">
+                    {experience.title}
+                  </h3>
                 </div>
               </VerticalTimelineElement>
             ))}

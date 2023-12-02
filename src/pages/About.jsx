@@ -4,8 +4,9 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { skills, experiences } from "../constants";
+import { skills, experiences, socialLinks } from "../constants";
 import CTA from "../components/CTA";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -21,6 +22,23 @@ const About = () => {
           Software Engineer based in Taiwan, specializing in front-end UI
           development and e2e testing.
         </p>
+      </div>
+
+      <div className="mt-5 flex gap-3">
+        {socialLinks.map((social) => (
+          <div key={social.name}>
+            <Link
+              to={social.link}
+              className="flex w-7 h-7 rounded-full bg-white border border-solid border-blue-500/80 items-center justify-center overflow-hidden p-0.5"
+            >
+              <img
+                src={social.iconUrl}
+                alt={social.name}
+                className="w-full h-full object-contain"
+              />
+            </Link>
+          </div>
+        ))}
       </div>
 
       <div className="py-10 flex flex-col">

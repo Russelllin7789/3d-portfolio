@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { qnap, advantech, wordup } from "../assets/images";
 import {
   car,
   contact,
@@ -103,7 +103,7 @@ export const experiences = [
   {
     title: "Senior Software Developer",
     company_name: "Advantech",
-    icon: starbucks,
+    icon: advantech,
     iconBg: "#accbe1",
     date: "Sep 2022 - now",
     points: [
@@ -116,7 +116,7 @@ export const experiences = [
   {
     title: "React.js Developer",
     company_name: "WordUp",
-    icon: tesla,
+    icon: wordup,
     iconBg: "#fbc3bc",
     date: "Apr 2022 - Aug 2022",
     points: [
@@ -128,7 +128,7 @@ export const experiences = [
   {
     title: "Front-end Developer",
     company_name: "QNAP",
-    icon: shopify,
+    icon: qnap,
     iconBg: "#b7e4c7",
     date: "Mar 2021 - Mar 2022",
     points: [
